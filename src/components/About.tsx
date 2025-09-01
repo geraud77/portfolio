@@ -2,10 +2,10 @@ import { User, MapPin, Calendar, Mail, Phone, Globe } from "lucide-react";
 
 const About = () => {
   const personalInfo = [
-    { icon: User, label: "Name", value: "Geraud Vtalah" },
-    { icon: MapPin, label: "Location", value: "United States" },
+    { icon: User, label: "Name", value: "Vtalah Geraud" },
+    { icon: MapPin, label: "Location", value: "Cameroon" },
     { icon: Calendar, label: "Experience", value: "Software Developer" },
-    { icon: Mail, label: "Email", value: "geraud.vtalah@example.com" },
+    { icon: Mail, label: "Email", value: "vgeraud77@gmail.com" },
     { icon: Phone, label: "Phone", value: "Available upon request" },
     { icon: Globe, label: "Status", value: "Open to opportunities" },
   ];
@@ -27,7 +27,10 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-2xl"></div>
                 <div className="relative w-full h-full bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center">
                   <div className="w-72 h-72 bg-secondary rounded-full flex items-center justify-center">
-                    <User className="w-32 h-32 text-muted-foreground" />
+                    <User
+                      className="w-32 h-32 text-muted-foreground"
+                      aria-label="Vtalah Geraud Profile Icon"
+                    />
                   </div>
                 </div>
               </div>
@@ -71,13 +74,13 @@ const About = () => {
                 and backend development, allowing me to create comprehensive
                 digital solutions.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              {/* <p className="text-lg text-muted-foreground leading-relaxed">
                 My journey in technology began with a curiosity about how things
                 work, which evolved into a passion for building applications
                 that solve real-world problems. I believe in writing clean,
                 maintainable code and staying up-to-date with the latest
                 industry trends and best practices.
-              </p>
+              </p> */}
             </div>
 
             <div className="space-y-4">
@@ -86,8 +89,8 @@ const About = () => {
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I specialize in developing scalable web applications using
-                modern frameworks and technologies. My expertise includes React,
-                Node.js, TypeScript, and cloud services. I enjoy working on
+                modern frameworks and technologies. My expertise includes
+                ReactJS, , TypeScript and Python . I enjoy working on
                 challenging projects that push the boundaries of what's
                 possible.
               </p>

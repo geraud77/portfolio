@@ -1,4 +1,4 @@
-import { Heart, ArrowUp, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowUp, Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,13 +17,13 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: "GitHub", icon: Github, url: "https://github.com/geraudvtalah" },
+    { name: "GitHub", icon: Github, url: "https://github.com/geraud77" },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/geraudvtalah",
+      url: "https://linkedin.com/in/vtalah-geraud-b4b726271",
     },
-    { name: "Email", icon: Mail, url: "mailto:geraud.vtalah@example.com" },
+    { name: "Email", icon: Mail, url: "mailto:vgeraud77@gmail.com" },
   ];
 
   return (
@@ -34,7 +34,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent mb-4">
-              Geraud Vtalah
+              Vtalah Geraud
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md">
               A passionate full-stack developer dedicated to creating innovative
@@ -82,9 +82,9 @@ const Footer = () => {
               Contact Info
             </h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>geraud.vtalah@example.com</p>
+              <p>vgeraud77@gmail.com</p>
               <p>Available upon request</p>
-              <p>United States</p>
+              <p>Cameroon</p>
             </div>
           </div>
         </div>
@@ -95,15 +95,8 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center md:text-left">
               <p className="text-muted-foreground">
-                © {currentYear} Geraud Vtalah. All rights reserved.
+                © {currentYear} Vtalah Geraud. All rights reserved.
               </p>
-            </div>
-
-            {/* Made with Love */}
-            <div className="flex items-center space-x-2 text-muted-foreground">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>using React & Tailwind CSS</span>
             </div>
           </div>
         </div>

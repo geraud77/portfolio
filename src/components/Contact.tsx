@@ -51,8 +51,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "geraud.vtalah@example.com",
-      link: "mailto:geraud.vtalah@example.com",
+      value: "vgeraud77@gmail.com",
+      link: "mailto:vgeraud77@gmail.com",
       description: "Send me an email anytime",
     },
     {
@@ -65,7 +65,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      value: "United States",
+      value: "Cameroon",
       link: "#",
       description: "Available for remote work",
     },
@@ -75,19 +75,19 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/geraudvtalah",
+      url: "https://github.com/geraud77",
       color: "hover:bg-gray-900 hover:text-white",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/geraudvtalah",
+      url: "https://linkedin.com/in/vtalah-geraud-b4b726271",
       color: "hover:bg-blue-600 hover:text-white",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:geraud.vtalah@example.com",
+      url: "mailto:vgeraud77@gmail.com",
       color: "hover:bg-red-500 hover:text-white",
     },
   ];
@@ -323,7 +323,7 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:geraud.vtalah@example.com"
+                href="mailto:vgeraud77@gmail.com"
                 className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
                 <Mail className="inline-block w-5 h-5 mr-2" />

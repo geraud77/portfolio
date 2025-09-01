@@ -11,97 +11,67 @@ const Experience = () => {
   const workExperience = [
     {
       id: 1,
-      title: "Senior Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      location: "San Francisco, CA",
-      period: "Jan 2023 - Present",
+      title: "Frontend Developer",
+      company: "Paal AI",
+      location: "Brazil",
+      period: "08/2024 – 06/2025",
       description:
-        "Leading development of enterprise web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.",
+        "Paal lets users build personalized AI bots for Telegram, Discord, and more, offering business solutions like automated trading.",
       achievements: [
-        "Led a team of 5 developers in building a customer portal that increased user engagement by 40%",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Mentored 3 junior developers and conducted code reviews",
-        "Optimized application performance resulting in 30% faster load times",
+        "Collaborated with the Frontend Lead developer to develop interfaces for user interaction.",
+        "Collaborated with the UI/UX designer on web design features",
+        "Optimized the user experience.",
+        "Did API intergration for crypto news",
       ],
-      technologies: [
-        "React",
-        "Node.js",
-        "TypeScript",
-        "AWS",
-        "Docker",
-        "PostgreSQL",
-      ],
+      technologies: ["React", "Tailwind", "TypeScript", "Firebase"],
     },
     {
       id: 2,
-      title: "Full Stack Developer",
-      company: "Digital Innovations Ltd.",
-      location: "New York, NY",
-      period: "Mar 2021 - Dec 2022",
+      title: "Frontend Developer",
+      company: "Wakamann",
+      location: "Douala, CMR",
+      period: "06/2023 – 08/2024",
       description:
         "Developed and maintained multiple web applications for clients across various industries. Collaborated with design and product teams.",
       achievements: [
-        "Built 8 client websites with 99.9% uptime",
-        "Reduced bug reports by 50% through improved testing",
-        "Implemented responsive design for all projects",
-        "Collaborated with 12+ clients across different industries",
+        "Collaborated with UI/UX designer on web design features.",
+        "Optimized the user experience.",
+        "Fixed bugs and conducted usability testing",
       ],
-      technologies: [
-        "React",
-        "Express.js",
-        "MongoDB",
-        "Tailwind CSS",
-        "Jest",
-        "Heroku",
-      ],
+      technologies: ["ReactJS", "Tailwind CSS", "Javascript"],
     },
-    {
-      id: 3,
-      title: "Frontend Developer",
-      company: "WebCraft Studios",
-      location: "Austin, TX",
-      period: "Jun 2020 - Feb 2021",
-      description:
-        "Focused on creating responsive and interactive user interfaces. Worked closely with UX designers to implement pixel-perfect designs.",
-      achievements: [
-        "Developed 15+ responsive web components",
-        "Improved page load speed by 25%",
-        "Implemented accessibility features for better UX",
-        "Collaborated with design team on 8 projects",
-      ],
-      technologies: ["React", "JavaScript", "CSS3", "HTML5", "Webpack", "Git"],
-    },
+    // {
+    //   id: 3,
+    //   title: "Frontend Developer",
+    //   company: "WebCraft Studios",
+    //   location: "Austin, TX",
+    //   period: "Jun 2020 - Feb 2021",
+    //   description:
+    //     "Focused on creating responsive and interactive user interfaces. Worked closely with UX designers to implement pixel-perfect designs.",
+    //   achievements: [
+    //     "Developed 15+ responsive web components",
+    //     "Improved page load speed by 25%",
+    //     "Implemented accessibility features for better UX",
+    //     "Collaborated with design team on 8 projects",
+    //   ],
+    //   technologies: ["React", "JavaScript", "CSS3", "HTML5", "Webpack", "Git"],
+    // },
   ];
 
   const education = [
     {
       id: 1,
-      degree: "Master of Science in Computer Science",
-      school: "Stanford University",
-      location: "Stanford, CA",
-      period: "2018 - 2020",
-      description:
-        "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors.",
-      achievements: [
-        "GPA: 3.9/4.0",
-        "Research Assistant in AI Lab",
-        "Teaching Assistant for CS101",
-        "Graduated with Distinction",
-      ],
-    },
-    {
-      id: 2,
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of California, Berkeley",
-      location: "Berkeley, CA",
-      period: "2014 - 2018",
-      description:
-        "Focused on Computer Science fundamentals with minor in Mathematics.",
-      achievements: [
-        "GPA: 3.8/4.0",
-        "Dean's List all semesters",
-        "Computer Science Club President",
-        "Internship at Google",
+      degree: "Bachelor of Computer Engineering",
+      school: "University of Buea",
+      location: "Buea, Cameroon",
+      period: "2021 - 2025",
+      description: "Focused on Computer Engineering fundamentals.",
+      courses: [
+        "Computer Architecture",
+        "Operating Systems",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Object-Oriented Programming",
       ],
     },
   ];
@@ -109,27 +79,27 @@ const Experience = () => {
   const certifications = [
     {
       id: 1,
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-123456789",
-      link: "https://aws.amazon.com/certification/",
+      name: "Enterprise Design Thinking Practitioner",
+      issuer: "IBM",
+      date: "2024",
+      credentialId: "d39829d0-d316-4ebb-9af5-88e4e4eb508e",
+      link: "https://www.credly.com/badges/d39829d0-d316-4ebb-9af5-88e4e4eb508e/public_url",
     },
     {
       id: 2,
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2022",
-      credentialId: "GCP-987654321",
-      link: "https://cloud.google.com/certification/",
+      name: "Product Management Basics Certification",
+      issuer: "Pendo",
+      date: "2024",
+      credentialId: "e953e42f-bf97-404b-a250-9ce41d2b0de9",
+      link: "https://www.credly.com/badges/e953e42f-bf97-404b-a250-9ce41d2b0de9/public_url",
     },
     {
       id: 3,
-      name: "Certified Scrum Master (CSM)",
-      issuer: "Scrum Alliance",
-      date: "2021",
-      credentialId: "CSM-456789123",
-      link: "https://www.scrumalliance.org/",
+      name: "Enterprise Design Thinking - Team Essentials for AI",
+      issuer: "IBM",
+      date: "2024",
+      credentialId: "e018a573-58aa-4b22-93b9-21ca8e904ab0",
+      link: "https://www.credly.com/badges/e018a573-58aa-4b22-93b9-21ca8e904ab0/public_url",
     },
   ];
 
@@ -276,16 +246,16 @@ const Experience = () => {
 
                 <div>
                   <h5 className="font-semibold text-foreground mb-2">
-                    Achievements:
+                    Courses:
                   </h5>
                   <ul className="space-y-1">
-                    {edu.achievements.map((achievement, idx) => (
+                    {edu.courses.map((course, idx) => (
                       <li
                         key={idx}
                         className="text-sm text-muted-foreground flex items-start"
                       >
                         <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 mt-2 flex-shrink-0"></div>
-                        {achievement}
+                        {course}
                       </li>
                     ))}
                   </ul>

@@ -1,4 +1,4 @@
-import { Code, Database, Cloud, Palette, Cpu, Globe } from "lucide-react";
+import { Code, Database, Cpu, Globe } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -19,47 +19,47 @@ const Skills = () => {
       title: "Backend Development",
       skills: [
         { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 75 },
+        // { name: "Express.js", level: 75 },
         { name: "Python", level: 70 },
         { name: "PostgreSQL", level: 75 },
-        { name: "MongoDB", level: 70 },
+        // { name: "MongoDB", level: 70 },
         { name: "REST APIs", level: 85 },
       ],
     },
-    {
-      icon: Cloud,
-      title: "DevOps & Cloud",
-      skills: [
-        { name: "Docker", level: 65 },
-        { name: "AWS", level: 70 },
-        { name: "Git", level: 85 },
-        { name: "CI/CD", level: 70 },
-        { name: "Linux", level: 75 },
-        { name: "Nginx", level: 65 },
-      ],
-    },
-    {
-      icon: Palette,
-      title: "Design & Tools",
-      skills: [
-        { name: "Figma", level: 70 },
-        { name: "Adobe XD", level: 65 },
-        { name: "Photoshop", level: 60 },
-        { name: "Sketch", level: 55 },
-        { name: "InVision", level: 65 },
-        { name: "Zeplin", level: 60 },
-      ],
-    },
+    // {
+    //   icon: Cloud,
+    //   title: "DevOps & Cloud",
+    //   skills: [
+    //     { name: "Docker", level: 65 },
+    //     { name: "AWS", level: 70 },
+    //     { name: "Git", level: 85 },
+    //     { name: "CI/CD", level: 70 },
+    //     { name: "Linux", level: 75 },
+    //     { name: "Nginx", level: 65 },
+    //   ],
+    // },
+    // {
+    //   icon: Palette,
+    //   title: "Design & Tools",
+    //   skills: [
+    //     { name: "Figma", level: 70 },
+    //     { name: "Adobe XD", level: 65 },
+    //     { name: "Photoshop", level: 60 },
+    //     { name: "Sketch", level: 55 },
+    //     { name: "InVision", level: 65 },
+    //     { name: "Zeplin", level: 60 },
+    //   ],
+    // },
     {
       icon: Cpu,
       title: "Other Technologies",
       skills: [
-        { name: "GraphQL", level: 70 },
-        { name: "Redux", level: 80 },
-        { name: "Jest", level: 75 },
-        { name: "Webpack", level: 70 },
-        { name: "PWA", level: 70 },
-        { name: "Microservices", level: 65 },
+        { name: "Git", level: 70 },
+        { name: "Postman", level: 80 },
+        { name: "GitHub", level: 75 },
+        // { name: "Webpack", level: 70 },
+        // { name: "PWA", level: 70 },
+        // { name: "Microservices", level: 65 },
       ],
     },
     {
@@ -68,10 +68,10 @@ const Skills = () => {
       skills: [
         { name: "Problem Solving", level: 90 },
         { name: "Communication", level: 85 },
-        { name: "Team Leadership", level: 75 },
-        { name: "Project Management", level: 70 },
-        { name: "Agile/Scrum", level: 80 },
-        { name: "Mentoring", level: 75 },
+        { name: "Team Collaboration", level: 75 },
+        // { name: "Project Management", level: 70 },
+        // { name: "Agile/Scrum", level: 80 },
+        // { name: "Mentoring", level: 75 },
       ],
     },
   ];
@@ -130,7 +130,7 @@ const Skills = () => {
         </div>
 
         {/* Additional Skills */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h3 className="text-2xl font-semibold text-foreground text-center mb-8">
             Additional Skills & Certifications
           </h3>
@@ -159,7 +159,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Learning Journey */}
         <div className="mt-16 text-center">
@@ -172,21 +172,16 @@ const Skills = () => {
               the latest technologies. Currently exploring:
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "Rust",
-                "WebAssembly",
-                "Three.js",
-                "TensorFlow",
-                "Kubernetes",
-                "Serverless",
-              ].map((tech, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium"
-                >
-                  {tech}
-                </span>
-              ))}
+              {["AI", "Next.js", "Machine Learning", "Security"].map(
+                (tech, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </div>

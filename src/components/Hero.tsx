@@ -53,7 +53,7 @@ const Hero = () => {
               Hello, I'm
             </p>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent">
-              Geraud Vtalah
+              Vtalah Geraud
             </h1>
             <div className="h-20 flex items-center justify-center">
               <h2 className="text-2xl md:text-4xl font-semibold text-foreground/80">
@@ -79,7 +79,18 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button
+              onClick={() => {
+                // Create a temporary link element to trigger download
+                const link = document.createElement("a");
+                link.href = "/VTALAH-GERAUD-RESUME.pdf"; // Path to resume in public folder
+                link.download = "VTALAH-GERAUD-RESUME.pdf"; // Update filename as needed
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
               <Download className="inline-block w-5 h-5 mr-2" />
               Download Resume
             </button>
@@ -92,7 +103,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-8">
             <a
-              href="https://github.com/geraudvtalah"
+              href="https://github.com/geraud77"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-secondary/80 text-foreground transition-all duration-200 transform hover:scale-110"
@@ -100,7 +111,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/geraudvtalah"
+              href="https://www.linkedin.com/in/vtalah-geraud-b4b726271"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-secondary/80 text-foreground transition-all duration-200 transform hover:scale-110"
@@ -108,7 +119,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:geraud.vtalah@example.com"
+              href="mailto:vgeraud77@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-secondary/80 text-foreground transition-all duration-200 transform hover:scale-110"
